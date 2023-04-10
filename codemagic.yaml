@@ -1,0 +1,10 @@
+workflows:
+  people-workflow:
+    name: Spotify Pipeline
+    scripts:
+      - name: CICD Started
+        script: echo "AAA"
+    publishing:
+      email:
+        recipients:
+          - adders-03-thirds@icloud.com
