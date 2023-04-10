@@ -4,6 +4,8 @@ workflows:
     scripts:
       - name: CICD Started
         script: echo "AAA"
+      - name: Build Spotify
+        script: xcodebuild build -project "People.xcodeproj" -scheme "People" CODE_SIGN_INDENTITY="" CODE_SIGNING_REQUIRED=NO CODE_SIGNING_ALLOWED=NO
     publishing:
       email:
         recipients:
